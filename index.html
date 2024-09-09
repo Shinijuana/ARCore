@@ -15,7 +15,7 @@
       background-color: #eee;
       overflow-x: hidden;
       width: 100%;
-      height: 100vh; /* Assicura che l'elemento occupi tutta la schermata */
+      height: 100vh;
     }
 
     #ar-button {
@@ -93,7 +93,15 @@
 <body>
 
   <!-- Esperienza AR con un oggetto -->
-  <model-viewer src="assets/ASTRONAVE.glb" poster="assets/target.png" tone-mapping="neutral" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="Un modello 3D di un oggetto">
+  <model-viewer 
+    src="assets/ASTRONAVE.glb" 
+    poster="assets/poster.png" 
+    tone-mapping="neutral" 
+    shadow-intensity="1" 
+    ar 
+    camera-controls 
+    touch-action="pan-y" 
+    alt="Un modello 3D di un oggetto">
     
     <button slot="ar-button" id="ar-button">
       View in your space
